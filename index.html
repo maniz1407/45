@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e1313" />
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./public/apple-touch-icon.png">
+
+  <title id="title">➍➎</title>
+
+  <!-- Import CSS File -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/responsive.css">
+
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body onload="preLoader()">
+
+  <div id="loading"></div>
+
+  <!-- Go to Up button -->
+  <button onclick="topFunction()" id="moveTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">➍➎</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#play">Play Song</a></li>
+        <li><a href="#songs">Choose Song</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+
+  <!-- PLAY PAGE -->
+  <section class="play" id="play">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="left-col">
+              <h1 id="songName"> Unn Badhil Vendi </h1>
+              <h5>~<em id="songBy">Siddharth</em></h5>
+            </div>
+            <div class="right-col">
+              <img src="./assets/Image/play.png" alt="play-button" id="icon">
+              <p>Click Here To Listen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio id="song">
+        <source src="./assets/Songs/Unn-Badhil-Vendi.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </section>
+
+  <!-- SELECT SONGS -->
+  <section class="songs" id="songs">
+    <div class="container">
+      <div class="songs-header">
+        <h2 class="title">Choose a song !!</h2>
+        <a class="play-song-btn" href="#play">Play Song</a>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn"> Lazy Song</button>
+        <button type="button" class="btn">Aradhya</button>
+        <button type="button" class="btn">Nanbane</button>
+        <button type="button" class="btn">Unakku Thaan</button>
+        <button type="button" class="btn">Hayati</button>
+        <button type="button" class="btn">Abrar's Entry</button>
+        <button type="button" class="btn">Badass</button>
+        <button type="button" class="btn">10000 Pax</button>
+        <button type="button" class="btn">Azhagiye</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">Unnbadhil Vendi is a song from the Tamil film Taramani, released in 2017. The song is composed by Yuvan Shankar Raja, and the lyrics are written by Na. Muthukumar. The vocals for this track are provided by Yuvan Shankar Raja himself.
+
+            Unnbadhil Vendi is a soulful and emotional song that reflects the theme of love and its complexities. The lyrics delve into the intricacies of relationships, capturing the highs and lows that come with love. The music, coupled with poignant lyrics, adds depth to the overall emotional impact of the song. The film Taramani, directed by Ram, is known for its realistic portrayal of contemporary relationships and urban life
+          </p>
+          <a class="download-song" href="./assets/Songs/Unn-Badhil-Vendi.mp3" id="download" download="Song.mp3">
+            Download Song
+          </a>
+        </div>
+        <div class="image-container">
+          <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1483028844/srch_pplmumbai_IND291601129.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="title">Connect with me on Social media</h2>
+    <div class="social-media">
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <footer class="footer">
+      <p>© Design by <a href="#" target="_blank">Maniz</a></p>
+          </footer>
+  </section>
+
+  <!-- Import JS File -->
+  <script src="./JS/script.js"></script>
+  <script src="./RegisterServiceWorker.js"></script>
+
+</body>
+
+</html>
